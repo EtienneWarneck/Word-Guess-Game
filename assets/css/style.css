@@ -1,0 +1,12 @@
+p{
+    float: none;
+    position: relative;
+    padding-left:50%;
+    height: 20px;
+    /* border: 1px solid red; */
+}
+
+
+#CW {
+    white-space: pre;
+}

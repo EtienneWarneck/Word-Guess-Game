@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+        'use strict';
+    
+        let guessedLetters = [];
+    
+        document.addEventListener('keydown', event => {
+            const charList = 'abcdefghijklmnopqrstuvwxyz0123456789';
+            const key = event.key.toLowerCase();
+    
+            // we are only interested in alphanumeric keys
+            if (charList.indexOf(key) === -1) return;
+    
+            guessedLetters.push(key);
+            document.write(guessedLetters);
+        });
+    });
+
+</script>
+
+
+</body>
+</html>

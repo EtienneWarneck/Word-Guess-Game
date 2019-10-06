@@ -10,88 +10,21 @@
 </head>
 
 <body>
-    <!-- <script src="/assets/javascript/game.js"></script> -->
-    <p>HANGMAN</p>
-    <p id="pressed" >Press any letter to start !!!</p><br>
-    <p class="wins">Wins:</p><br>
-    <p id="CW"></p><br>
-    <p class="lives">Number of guesses remaining: </p><br>
-    <p class="G">Letters guessed: </p>
-
+    <script src="/assets/javascript/game.js"></script>
+    <h1>CLEANING BRANDS HANGMAN !</h1> <br>
+    <img src="cleaning-stuff-300x214.jpg" alt="">
+    <button onclick="startGame()" id="btnPopup">START GAME !</button>
+    <br></br>
+    <hr>
+    <h3 id="pressed"></h3><br>
+    <h2 id="currentWord"> </h2><br>
+    <p id="wins"></p>
+    <p id="guessesRemaining"> </p>
+    <p id="lettersAlreadyPressed"> </p>
 
     <script>
-        var words = [
-            "warhol",
-            "lichtenstein",
-            "katz"
-        ];
 
-
-        var word = words[Math.floor(Math.random() * words.length)];
-        console.log("word Variable", word);
-
-        var answerArray = [];
-        for (var i = 0; i < word.length; i++) {
-            answerArray[i] = "_";
-        }
-
-        var lives = word.length;
-
-        var win = 0;
-
-        
-        var x = document.getElementById("CW");
-        var newline = "\r\n";
-        x.textContent = "Current word:" + newline + answerArray.join(" ");
-        
-
-        //STARTS HERE: 
-        document.onkeyup = function (event) {
-
-            var key = event.keycode;
-
-
-
-        }
-
-        //     var letter =event.key.toLowerCase();
-
-        // }
-        // document.body.addEventListener("keypress", function(event) {
-        //     document.write(event.key)
-        // });
-
-        // var win = document.getElementById("wins");
-        //  var currentWord = document.getElementById("CW");
-        // // var remainGuess = document.getElementById("remainingGuesses");
-        // // var guessLetters = document.getElementById("alreadyGuessed");
-
-        // document.onkeyup = function (event) {
-        //     console.log("CURRENT WORD", currentWord.innerHTML)
-        //     // currentWord.innerHTML = 'hello'
-        //     console.log(event);
-
-        //     var userPick = event.key;
-        //     console.log(userPick);
-
-        //     while (remainingLetters > 0) {
-        //         console.log(answerArray.join("-"));
-        //         return;
-        //     }
-
-        //     for (j = 0; j < word.length; j++) {
-        //         if (word[j] === userPick) {
-        //             answerArray[j] = userPick;
-        //             remainingLetters--;
-        //         }
-        //     }
-
-        // win.textContent = ("Wins: " + userWin);
-        //  currentWord.textContent = (word);
-        //     // tied.textContent = ("Count of tieds : " + userTied);
-
-        // }
-
+       
     </script>
 </body>
 

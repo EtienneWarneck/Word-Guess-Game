@@ -22,10 +22,20 @@
     <p id="guessesRemaining"> </p>
     <p id="lettersAlreadyPressed"> </p>
 
-    <script>
+   <script>
+   
+   function startGame() {
 
-       
-    </script>
+
+document.getElementById("pressed").innerHTML = "Find the brand. Press any key to get started ";
+document.getElementById("currentWord").innerHTML = "Current word: " + wordToGuess.join(" ");
+document.getElementById("wins").innerHTML = "Wins: " + win;
+document.getElementById("guessesRemaining").innerHTML = "Number of guesses remaining: ";
+document.getElementById("lettersAlreadyPressed").innerHTML = "Letters already pressed: ";
+}
+</script>
+
+    
 </body>
 
 </html>
